@@ -1,0 +1,82 @@
+.currentpage{
+  background-color: #f0f0f0;
+  padding: 5px 30px;
+  font-size: 1rem;
+  font-family: helvetica;
+  text-align: right;
+  margin: 0;
+}
+.bggreetings{
+  margin-left: 0;
+  background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(./wallpaper/blue005-1.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 20px
+}
+header{
+  font-size: 18px;
+  padding-left: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+.greeting{
+  color: #F9F4F4;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 6em;
+  font-size: 5rem;
+  text-transform: uppercase;
+  line-height: 0.5;
+  letter-spacing: 1;
+  margin-top: 0;
+  margin-bottom: 0.67em
+}
+.greetname{
+  color: #48F3DB;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 0.5;
+  letter-spacing: 1;
+  padding-bottom: 0.4em;
+}
+h5{
+  font-family: 'Merriweather', serif;
+  color: #F9F4F4;
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 50px;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: lighter;
+}
+body{
+  display: block;
+  margin: 0px;
+}
+.infomichael{
+  background-color: #f0f0f0;
+  margin: 0,auto;
+  float: left;
+}
+.aboutmichael {
+  padding: 15px;
+  margin-right: 2%;
+}
+.mypic{
+  display: inline-block;
+  padding: 1em;
+}
+.abouttext{
+  padding: 1em;
+  font-family: helvetica;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: justify;
+  width: 30%;
+}
+footer{
+  font-family: serif;
+}
