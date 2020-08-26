@@ -1,3 +1,4 @@
+/*top grey header for nav bar someday */
 .currentpage{
   background-color: #f0f0f0;
   padding: 5px 30px;
@@ -6,6 +7,7 @@
   text-align: right;
   margin: 0;
 }
+/*background*/
 .bggreetings{
   margin-left: 0;
   background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(./wallpaper/blue005-1.jpg);
@@ -16,11 +18,14 @@
   background-repeat: no-repeat;
   padding-left: 20px
 }
-header{
-  font-size: 18px;
+/*Michael Valentine Chandra header*/
+.abouttext header{
+  font-size: 2em;
+  padding-top: .8em;
   padding-left: 0px;
   font-family: 'Montserrat', sans-serif;
 }
+/*Hello...*/
 .greeting{
   color: #F9F4F4;
   font-family: 'Montserrat', sans-serif;
@@ -32,6 +37,7 @@ header{
   margin-top: 0;
   margin-bottom: 0.67em
 }
+/* I'm Michael*/
 .greetname{
   color: #48F3DB;
   font-family: 'Montserrat', sans-serif;
@@ -42,6 +48,7 @@ header{
   letter-spacing: 1;
   padding-bottom: 0.4em;
 }
+/* caption of greeting's header*/
 h5{
   font-family: 'Merriweather', serif;
   color: #F9F4F4;
@@ -56,27 +63,40 @@ body{
   display: block;
   margin: 0px;
 }
+/* light grey background for main part*/
 .infomichael{
   background-color: #f0f0f0;
   margin: 0,auto;
   float: left;
 }
-.aboutmichael {
-  padding: 15px;
-  margin-right: 2%;
-}
+/*my profile pic*/
 .mypic{
   display: inline-block;
   padding: 1em;
+  float: left;
+  padding-left: 25%
 }
+/*text of about myself*/
 .abouttext{
   padding: 1em;
-  font-family: helvetica;
+  padding-left: 33%
+  clear: both;
+  font-family: 'Merriweather', serif;
   display: inline-block;
+  float: left;
   font-size: 1rem;
-  text-align: justify;
+  text-align: left;
   width: 30%;
 }
+/* header for link to cv */
+.pagecv{
+  display: inline-block;
+  float:left;
+  clear: both;
+  padding-left: 48%;
+  font-family: 'Merriweather', serif;
+}
+/* contact info */
 footer{
   font-family: serif;
 }
