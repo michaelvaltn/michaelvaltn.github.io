@@ -1,0 +1,165 @@
+/* Top NavBar */
+.navbar ul{
+  margin: 0;
+  padding-left: 1em;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a{
+  float: left;
+  list-style-type: none;
+  display: block;
+  padding: 1em 1em;
+
+  color: #1E1F21;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+li{
+  float: right;
+  list-style-type: none;
+  display: block;
+  margin-right: 2%;
+  padding: 1em 1em;
+
+  color: #1E1F21;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+.navbar a:hover{
+  background-color: #0D1339;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+/* Main */
+/*background for main bggreetings*/
+.bggreetings{
+  margin-left: 0;
+  background:/*linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),*/ url('../images/wallpaper/82.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+}
+/* Section of greeting and caption (greetingpart)*/
+.greetingpart{
+  padding-top: 28em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+}
+/*Hello I'm Michael*/
+.greeting{
+  color: #1E1F21;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4em;
+  text-transform: capitalize;
+  line-height: 0.5;
+  letter-spacing: 1;
+  margin: 0.5em 0;
+}
+/* caption of greeting's header*/
+.greetingcaption{
+  font-family: 'Merriweather', serif;
+  color: #0D1339;
+  margin: 0;
+  padding-bottom: 1em;
+  font-size: 1em;
+}
+/* For Links in Index */
+.MyCV{
+  display: block;
+  text-align: center;
+  padding: 1em 2em;
+  background: transparent;
+  margin-right: 85%;
+
+  border-style: solid;
+  border-color: #1E1F21;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.MyCV:link{
+  color: #1E1F21;
+}
+a.MyCV:visited{
+  color: #1E1F21;
+}
+a.MyCV:hover{
+  background-color: #0D1339;
+  border-color: #0D1339;
+  color: #F9F4F4;
+  font-weight: bolder;
+}
+body{
+  margin: 0px;
+  background-color: #F5F5F5;
+
+}
+
+/* section infomichael */
+.infomichael{
+  color: #0D1339;
+  padding: 2em 0;
+  background-color: #EAEAEA;
+}
+/*  About Me*/
+.nametitle{
+  padding: 1em 0;
+  margin: 0 auto 0 10em;
+  max-width: 60em;
+  width: 70%;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  background-color: #EAEAEA;
+}
+.aboutmichael{
+  padding: 0;
+  margin: 0 auto 0 20em;
+  max-width: 60em;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: [first-col] 2.5fr [pic-col] 1.5fr [end];
+  grid-template-rows: [first-row] 1fr [second-row] 2fr [last-line];
+}
+/* My Name is Michael Valentine... */
+.aboutgreeting{
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em;
+  max-width: 60em;
+  margin-top: 1em;
+}
+/*text of about myself*/
+.aboutmichael p{
+  font-family: 'Times New Roman', serif;
+  font-size: 1em;
+  display:grid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  margin-top: 0;
+}
+.mypic{
+  display: grid;
+  grid-column: 2 / end;
+  grid-row: 1 / 3;
+  padding-left: 2em;
+}
+footer{
+  display: block;
+  clear: both;
+
+  padding-top: 0.5em;
+  padding-left: 10em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  color: #1E1F21;
+  font-size: 2em;
+}
+.connect{
+  font-size: 0.75em;
+}
