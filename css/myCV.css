@@ -1,0 +1,180 @@
+/* Top NavBar */
+.navbar{
+  margin: 0;
+  padding-left: 1em;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+.navbar a{
+  float: left;
+  list-style-type: none;
+  display: block;
+  padding: 1em 1em;
+
+  color: #1E1F21;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+.navbar li{
+  float: right;
+  list-style-type: none;
+  display: block;
+  margin-right: 2%;
+  padding: 1em 1em;
+
+  color: #1E1F21;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+.navbar a:hover{
+  background-color: #0D1339;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+.greetingpart{
+  background-image: url('../images/wallpaper/82-min.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.greetingpart{
+  padding-top: 24em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+}
+.greeting{
+  color: #1E1F21;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4em;
+  text-transform: capitalize;
+  line-height: 0.5;
+  letter-spacing: 1;
+  margin: 0.5em 0;
+}
+/* caption of greeting's header*/
+.greetingcaption{
+  font-family: 'Merriweather', serif;
+  color: #0D1339;
+  margin: 0;
+  font-size: 1em;
+}
+.chooseresume{
+}
+/* Button for choosing resume */
+.chooseresume li{
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-color: #1E1F21;
+  padding: 0.5em 3em;
+  margin: 1em 40% 1em 40%;
+  color: #0D1339;
+  font-weight: bold;
+  text-decoration: none;
+}
+.chooseresume li:hover{
+  background-color: #0D1339;
+  color: #FFFFFF;
+  border-color: #0D1339;
+}
+.bgcolor{
+  background-color: #EAEAEA;
+  padding: 1em 0;
+}
+/* consultantresume CSS */
+#consultantresume{
+  padding: 2em;
+  background-color: #FFFFFF;
+  display: block;
+  margin: 2em 22%;
+}
+.namecontact{
+  border-style:  dashed;
+  background-color: #FFFFFF;
+  border-color: #000000;
+  text-align: center;
+}
+.namecontact p{
+  text-align: center;
+}
+#resumesection{
+  background-color: #FFFFFF;
+}
+#resumesection h1{
+  text-align: center;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.8px;
+}
+#caption{
+  width: 100%;
+}
+table, tr, td{
+  border: 1px dashed #000000;
+  border-collapse: collapse;
+  width:inherit;
+}
+#caption th{
+  font-style: italic;
+  font-weight: bold;
+}
+#caption td{
+  font-weight: bold;
+}
+#caption th:first-child, p{
+  text-align: left;
+  padding:0 1em;
+}
+#caption ol{
+  margin-left: 1em;
+}
+#caption td:nth-child(2){
+  text-align: center;
+}
+
+/* CSS for footer */
+footer{
+  display: block;
+  clear: both;
+
+  padding-top: 0.5em;
+  padding-left: 10em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  color: #1E1F21;
+  font-size: 2em;
+}
+.connect{
+  font-size: 0.75em;
+}
+.socialmedia{
+  margin-left: 0.5em;
+}
+.socialmedia i{
+  padding-left: 0.25em;
+}
+.cr{
+  float:right;
+  margin-right: 50%;
+  font-size: 0.5em;
+  opacity: 0.7;
+}
+.socialmedia{
+  margin-left: 2em;
+}
+.socialmedia a:link{
+  color: #000000;
+  text-decoration: none;
+}
+
+#styledresume{
+  display: none;
+}
+.styledresumepic{
+  width: 56%;
+  margin: 2em 22%;
+}
