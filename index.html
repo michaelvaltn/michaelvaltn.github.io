@@ -8,8 +8,12 @@
   <title> Michael Valentine's Website </title>
   <script src="https://kit.fontawesome.com/6d52582525.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/websitestyle.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/scroll.js" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header>
@@ -19,51 +23,134 @@
         <a href="#">Works</a>
         <a href="#">Resume</a>
         <a href="#">Contact</a>
-        <li>Home</li>
+        <li></li>
       </ul>
     </div>
+    <div id="bggreetings">
+      <div class='greetingpart'>
+        <h1 class="greeting"> Hello! I'm
+        <span style="color:#103F9B">Michael</span> </h1>
+        <h5 class='greetingcaption'> I'm an Accounting Undergraduate Student (2019-2023) &amp previously
+        <br>a Part-Time Research Assistant at Atma Jaya University of Indonesia </h5>
+        <a href="MyCVtest.html" class="MyCV" target="_blank">See My Resume</a>
+        <a href="https://www.wallpaperflare.com/black-on-black-things-business-computer-desk-diary-iphone-wallpaper-wkcoi" class="bgsource">Source: Wallpaper Flare</a>
+      </div>
+      <div id="my-scroll">
+        <a id="downClick"><span></span>Scroll</a>
+      </div>
+    </div>
   </header>
-  <main class="bggreetings">
-    <section class='greetingpart'>
-      <h1 class="greeting"> Hello! I'm
-      <span style="color:#103F9B">Michael</span> </h1>
-      <h5 class='greetingcaption'> Accounting Undergraduate Student (2019-2023) &amp Part-Time Research
-      <br>Assistant at Atma Jaya University of Indonesia </h5>
-      <a href="myCV.html" class="MyCV">See My Resume</a>
-      <a href="http://www.freepik.com" class="bgsource">Designed by Waewkidja / Freepik</a>
-    </section>
-  </main>
 
-  <main class="infomichael">
-    <section class='nametitle'>
-      About
-      <span style="color:#103F9B">Me.</span>
+  <article id="infomichael">
+    <section class="boxbackground">
+      <h2 class='nametitle'>
+        About<span style="color:#103F9B"> Me.</span>
+      </h2>
+        <header class="aboutgreeting">
+            My Name is Michael Valentine Chandra and I'm glad to meet you
+        </header>
+        <img src="images/picture/circlemichael-min.png" alt="my profile picture"  class="mypic"/>
+        <p> I'm a young university student, Born in the 21st century and
+            domiciled in Jakarta. As a digital native, I must adapt and keep up to the changes in the world,
+            including technological changes even though I'm an Accounting Student.
+        <br>My previous work experience involves researching and analyzing information, trends, and once works a lot with inputing data and processing in excel.
+            The topics that I have researched in my works is about Financial Technology, Financial Literacy, Indonesia's PESTEL (Politics, Economy, Society,
+            Technology, Environtment, and Law), and Indonesian Companies' Good Corporate Governance. Communication also involved in my works, as I have to
+            discuss and report about my work progress, explain my boss (in my case its my lecturer) about the data and information that i have.</p>
+        </div>
     </section>
-    <section class="aboutmichael">
-      <header class="aboutgreeting">
-          My Name is Michael Valentine Chandra and I'm glad to meet you
-      </header>
-      <img src="images/picture/circlemichael-min.png" alt="my profile picture" height=300px class="mypic"/>
-      <p> I'm a young university student, Born in the 21st century and
-          domiciled in Jakarta. As a digital native, I must adapt and keep up to the changes in the world,
-          including technological changes even though I'm an Accounting Student.
-      <br><br>My work experience mostly involves researching information, trends, and currently works a lot with data processing in excel.
-          Sometimes, he also has to convey the information either by verbal communication or presenting. For these reasons, he is very
-          interested to work as a Management Consultant someday. Working as a consultant requires lots of learning and researching, which
-          is something that Michael interested in doing. He is comfortable working alone as well as work in teams because he can convey
-          his thoughts and information clearly, which makes him suitable to become a consultant.</p>
-      </div>
+  </article>
+  <article class="mypassion">
+    <h2 class="nametitle">I'm <span style="color:#103F9B">Interested</span> to become ...</h2>
+    <section class="passion-box">
+      <section id="passion"class="consultant">
+        <img src="images/icon/consultation.png" alt="icon-consultation"><br>
+        <header class="headerpassion">
+          <h3>Consultant</h3>
+          <h4>A professional who gives expert<span style="color:#103F9B"> advice</span> in a particular area.</h4>
+        </header>
+        <p class="desc">
+          Their tasks range from doing research, interview, analyze data,
+          find the solution and advice necessary for the clients based on the previous tasks, and provides necessary expertise needed during implementation.<br>
+          Consultants may face different clients from different industries with different problems, so they are expected to constantly learn new
+          things and adapt according to their current project and client needs.</p>
+        <p class="reason">Becoming a consultant is my dream job. I personally feel that I am a generalist and  I like to learn how things work in the world. The job of consulting
+          and the tasks involved allows me to constantly forced to learn and I think it will be a great experience for me. The job itself is considered to be
+          prestigious and has numerous exit opportunities (but I hopefully able to stay on a consulting job until the end).</p>
+      </section>
+      <section id="passion" class="auditor">
+        <img src="images/icon/audit.png" alt="icon-audit"><br>
+        <header class="headerpassion">
+          <h3>Auditor</h3>
+          <h4>A professional who executes<span style="color:#103F9B"> audits</span> on the client's company.<h4>
+        </header>
+        <p class="desc">
+          They are the professionals certified to audits financial information or information systems (depending on their specialty) in order to
+          provide assurances to the stakeholders involved with the company. Their tasks range from gathering evidence, test management assertion against criteria,
+          and determines the overall fairness of the company's financial statement.
+        <p class="reason">Although my main aim is to become a consultant, I'm also interested in the works of the auditor. This job is directly aligned with my Accounting degree.
+          The process of auditing also provides a big opportunity to learn new things, as the job requires one to learn and understand the business
+          process and systems of the clients. The job is also considered to be prestigious and has numerous exit opportunities as well</p>
+      </section>
     </section>
-  </main>
-    <footer>
-      <p class="thanks"> Thanks for Visiting! </p>
-      <p class="connect"> Connect With <span style="color:#103F9B">Me</span> on... </p>
-      <div class ='socialmedia'>
-        <a href="https://www.linkedin.com/in/michaelvchandra/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/michaelvaltn/?hl=en"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/michaelvaltn"><i class="fab fa-github"></i></a>
-      </div>
-      <p class='cr'>© Michael Valentine Chandra 2020</p>
-    </footer>
+    <div class="icon-sources">
+      <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Icons made by Eucalyp</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a>
+      <a href="https://www.flaticon.com/authors/monkik" title="monkik">Icons made by monkik</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a>
+    </div>
+  </article>
+  <article id="skills-learn">
+    <section class="skills">
+      <h2 id="skill-title"><span style="color:#103F9B">Skills</span> that I currently learn to improve myself</h2>
+      <section id="sql" class="icon-section">
+        <img src="images/icon/sql-icon.png" alt="sql-icon">
+        <p>Structured Query Language (SQL) is a standard language used to interact with the database. Although it is not required for consultants and auditors, understanding SQL will be an advantage
+          since I will be working with lots of data and may need to communicate with the person that responsible with data science in the company, escpecially the jobs specialize
+          in data is growing quickly.</p>
+      </section>
+      <section id="excel" class="icon-section">
+        <img src="images/icon/excel.png" alt="ms.excel-icon">
+        <p>Ms. Excel maybe is the mostwidely used Office application. Excel is also the most often used tools for consultant for data analysis, and may also be used for data visualization.
+          Proficiency in Microsof Excel is usually priced a lot by recruiters for almost all types of jobs, since many job requirements demand skill in using Ms. Excel.</p>
+      </section>
+      <section id="web-dev" class="icon-section">
+        <img src="images/icon/webdev.png" alt="webdev-icon">
+        <p>To better familiarize myself with programming, many suggested I have to start with basic Web Development using HTML and CSS. Understanding those two will teachs me a lot
+          about how web browsers work and allows me to create my own personal website. My personal website is one of the self-project I decided to do for trained my skills and to
+          create a way to promote myself profesionally.</p>
+      </section>
+      <section id="js" class="icon-section">
+        <img src="images/icon/js-format.png" alt="js-icon">
+        <p>Javascript is one of the most famous programming language. It is used in web browsers and Javascript is another step to improves my web development skills as it allows
+          a more complex interactivity in the webpage that CSS and HTML cannot do. However I don't just learn it for web development, as my Javascript courses also includes data structures
+          that is the key in data analysis using programming language.</p>
+      </section>
+    </section>
+    <div class="icon-sources">
+      <a href="https://www.flaticon.com/authors/smartline" title="Smartline">Icons made by Smartline</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a>
+      <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Icons made by Pixel perfect</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a>
+      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Icons made by Freepik</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a>
+      <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">Icons made by iconixar</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a>
+
+    </div>
+  </article>
+  <footer>
+    <h1 class="thanks"> Thanks for Visiting! </h1>
+    <div class ='socialmedia'>
+    <p class="connect"> Connect With <span style="color:#103F9B">Me</span> on</p>
+      <a href="https://www.linkedin.com/in/michaelvchandra/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/michaelvaltn/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/michaelvaltn" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="end">
+      <p class='cr'>© Michael Valentine Chandra 2020 |</p>
+      <ul>
+        <a href="#">Home</a>
+        <a href="#">Works</a>
+        <a href="#">Resume</a>
+        <a href="#">Contact</a>
+        <li></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
