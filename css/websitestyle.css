@@ -8,90 +8,182 @@
   width: device-width ;
   zoom: 1.0 ;
 }
+/*------Main Part or Body Part--------*/
+html, body{
+  width: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+  overflow-x: initial !important;
+  background-color:#050505;
+
+  color: rgba(255, 255, 255, 0.9);
+  font: normal 1em 'Open Sans', serif;
+  line-height: 1.6;
+}
+/* ----------CONTENT, basically make all section and parts flow vertically --------*/
+
 /* Top NavBar */
 .navbar ul{
   margin: 0;
+  padding: 2.5em 5em;
   overflow: hidden;
   background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
-#icon{
+.nav-tab-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+/* --- LOGO OF WEBSITE (.michaelvaltn) ----*/
+#logo-web{
   text-decoration: none;
-  font: normal bold 1.4em "Montserrat", sans-serif;
-  color:#FFFFFF;
-  margin-right: .5em;
+  font: normal bold 1.6em "Montserrat", sans-serif;
+  margin:0 1em;
 }
 .nav-tab{
   list-style-type: none;
   display: block;
-  padding: 2em 1.3em;
+  
+  margin-right: 3em;
 
-  color: #FFFFFF;
-  font: normal 1.1em "Open Sans", sans-serif;
+  color: inherit;
+  font: normal 1.3em "Open Sans", sans-serif;
   letter-spacing: 1.5px;
+  transition: all 0.3s ease 0s;
   
   text-decoration: none;
   text-align: center;
   
 }
-
 .nav-tab:hover{
-  color: #FFFFFF;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  opacity: .5;
-  transition: all 0.3s ease 0s;
+  transform: translate(0, -7px);
+}
+
+/*--------SOSMED ICONS ---------------*/
+/*To set it on place */
+
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 
 }
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+
+  transition: all .8s;
+}
+.socialmedia img{
+
+  filter: invert(100%);
+  width: 25px;
+}
+/* The circle that appear on icons when hover */
+.socialmedia a:hover{
+  box-shadow: 0px 0px 1px 5px #eeeeee;
+}
+
+
+/* ----THIS IS FOR COLORED ICONS --------
+#linkedin-icon{
+  filter: invert(40%) sepia(18%) saturate(2701%) hue-rotate(177deg) brightness(85%) contrast(91%) ;
+}
+
+#insta-icon{
+  filter: invert(27%) sepia(88%) saturate(3059%) hue-rotate(324deg) brightness(94%) contrast(88%);
+}
+
+.socialmedia a:nth-child(1):hover{
+  box-shadow: 0px 0px 1px 7px #2867B2;
+}
+.socialmedia a:nth-child(2):hover{
+  box-shadow: 0px 0px 1px 7px #eeeeee;
+}
+.socialmedia a:nth-child(3):hover{
+  box-shadow: 0px 0px 1px 7px #E1306C;
+}*/
+
 /* Main */
-/*background for main bggreetings*/
+/*background for main bggreetings, --- FIRST PART OF PAGE ---*/
 #bggreetings{
-  background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.5) ), url('../images/wallpaper/dark-workspace-min.jpg');
-  height: 90vh;
+  background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .8) ), url('../images/wallpaper/dark-workspace-min.jpg');
+  height: 100vh;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size:  cover;
   -o-background-size: cover;
 }
 /* Section of greeting and caption (greetingpart)*/
+/* -- BOX for: I'M Michael, boxtext webbutton and sosmed icons. in place --*/
 .greetingpart{
-  width: 80%;
-  margin: 10em auto 2em;
-}
-.box-all{
+  width: 85%;
+  margin: 9em auto 1em;
   display: flex;
   flex-direction: row;
 }
-/*Hello I'm Michael*/
+/*Caption from I'm michael */
+.box-text{
+  font-size: 1.2em;
+  width: 55%;
+  margin:2em 0 1.5em;
+  text-align: justify;
+}
+.box-text p{
+  text-align: justify;
+  margin: 0;
+}
+/*I'm Michael*/
 .greeting{
-  color: #f8f8f8;
   font:normal 3.8em 'Ubuntu', sans-serif;
   text-transform: capitalize;
   line-height: 0.5;
-  margin: 0 0 .7em;  
-}
-.mypic{
-  max-height: 18em;
-  
+  margin: 0 0 .8em;  
 }
 
-/*text of about myself*/
+/*-------INTRO ABOUT MYSELF--------*/
+/*Sizing the whole intro content*/
+.intro-content{
+  padding: 1em;
+  margin: 0 auto;
+}
+.intro-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 4em;
+  box-shadow: 0px 15px 2px -8px #000000;
+}
+.intro-box h2{
+  margin: 1em auto 1em;
+  font-size: 3em;
+}
+.mypic{
+  width: 20%;
+}
+
 .text-about{
-  font: normal 200 1em 'Open Sans', sans-serif;
-  color: #FFFFFF;
-  text-align: left;
-  width: 80%;
-  margin-bottom: 2em;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 1.8em;
+  font-size:1.2em;
 }
-.box-text{
-  width:60%;
-}
-.text-about h2{
-  font: normal 400 1.1em 'Open Sans', sans-serif;
-  text-align: justify;
-}
+
 .text-about p{
   margin:0;
   margin-bottom:0.5em;
@@ -101,151 +193,176 @@
     font-size: 3em;
   }
 }
-/* For Links in Index */
+/* -----------BUTTON TO MY RESUME PAGE---------- */
+#web-button-part{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 6em;
+}
 
 .web-button{
-  display: inline-block;
   text-align: center;
-  padding: 1em 1em;
-  background-color: transparents;
+  padding: .8em 2em;
+  position: relative;
+  overflow: hidden;
 
-  width: 20%;
-  border: solid #f8f8f8 2px;
+  width: 8em;
+  border: .25px solid rgba(2, 119, 189, .5);
+  border-radius: 50px;
+  background:rgba(2, 119, 189, .5);
+  color: inherit;
   
-  font:normal 1em "Open Sans", sans-serif;
+  
+  font:bold 1.1em "Open Sans", sans-serif;
   text-decoration: none;
+  z-index: 2;
+  transition: all .5s;
+
+  box-shadow: 5px 5px 10px #000000;
 
 }
-.web-button:first-child{
-  margin-right: 1em;
+.web-button:link, .web-button:visited{
+  color: inherit;
 }
-a.web-button:link{
-  color: #FFFFFF; /*#1E1F21;*/
-
-
-  transition: all 0.4s ease 0s;
-
-}
-a.web-button:visited{
-  color: #FFFFFF;
-}
-a.web-button:hover{
-  background-color: #f8f8f8;
-  border: solid 1px #1E1F21;
-  color: #1E1F21;
-  font-weight: bold;
-  opacity: 0.9;
-
-  letter-spacing: 0.7px;
-  -webkit-box-shadow: 0px 5px 30px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 30px -10px rgba(0,0,0,0.57);
-  box-shadow: 5px 30px -10px rgba(0,0,0,0.57);
-  transition: all 0.3s ease 0s;
-
+.web-button:hover{
+  border: solid .25px  rgba(2, 119, 189, .5);
+  color: inherit;
+  transform: translate(0, -10px);
 }
 
-a.bgsource {
-  text-align: right;
-  float: right;
-  opacity: 0.5;
-  text-decoration: none;
+/*the blue part, used for fill animation*/
+.web-button:hover::before{
+  top: 0px;
+  border-radius: 0; 
 }
-a.bgsource:link{
-  font: normal "Open Sans", sans-serif;
-  color: #FFFFFF;
+.web-button::before{
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  
+  background: rgba(2, 119, 189, .5);
+  border-radius: 80% 80% 0 0;
+  z-index: -1;
+  transition: all .5s;
 }
-a.bgsource:visited{
-  font: normal "Open Sans", sans-serif;
-  color: #FFFFFF;
-}
-
-
+/*--------FOR DOWN CLICK ARROW --------*/
 #downClick{
   position: absolute;
-  margin-left: 40%;
-  margin-top: 4em;
-  z-index: 2;
-
-  display: inline-block;
+  margin-left: 50%;
   transition: .5s;
   
-  color: #FFFFFF;
+  color: #ffffff;
   font : normal 400 1em 'Open Sans', sans-serif;
   letter-spacing: .1em;
   text-decoration: none;
 }
-
 #downClick:hover{
- 
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-
+  transform: translate(0, -10px);
   opacity: .5;
   cursor: pointer;
-
 }
-
 #my-scroll a span {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  margin-left: -12px;
-  border-left: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
-  transition: .5s;
 }
 
-/*Main Part or Body Part*/
-html, body{
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: initial !important;
-  background-color: #000000;
-}
+/* ---------FOR SECTION TITLE PART--------- */
 
-/* My interest article section */
-.mypassion{
-  margin: 9em auto 4em;
-  color: #ffffff;
-  font: normal 100 1em 'Open Sans', serif;
-  font-size: 1em;
-  width: 100%;
+.section-title{
+  background: linear-gradient(125deg, rgba(0,0,0,1) 75%, rgba(51,51,51,1) 99%);
+  margin: 0 auto;
+}
+.section-title-box{
+  padding: 5em;
+  text-align: center;
+  
+}
+.section-h2{
+  font: normal lighter 2.1em 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 0;
+}
+/* The explanation on each section title */
+.section-p{
   text-align: justify;
+  margin:0 auto;
+  width: 70%;
+  font-size: 1.2em;
 }
-/* Careers that i'm interested in */
-
+/* ------- PASSION/INTEREST CONTENT ----------*/
 /*H in my passion */
 .headerpassion h3{
-  margin:0;
-  margin-bottom: .5em;
+  margin: 0;
+  margin-bottom:0.5em !important;
   font-size: 1.5em;
   letter-spacing: 1.5px;
 }
-
-/*Set all image in passion part to half the container (career-content)*/
-.passion-box img{ 
-  width: 50%;
+.reason h3{
+  margin-bottom:0.5em;
 }
 
-/* placement for content*/
+/*Set all image in passion part to half the container (career-content)*/
+.image-box{
+  overflow: hidden;
+  width: 50%;
+  height: 60vh;
+}
+.passion-box img{ 
+  width: 100%;
+  height: 100%;
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: brightness(80%);
+}
+.passion-box img:hover{
+  filter: brightness(100%);
+}
+.passion-box img:nth-child(2){
+  box-shadow: none;
+}
+/* placement for interest content*/
 .career-content{
   display: flex;
   flex-direction: row;
+  flex-wrap:wrap;
 }
-
+.passion-content{
+  padding: 1em;
+}
+.passion-box{
+  margin: 0 auto;
+  box-shadow: 15px 15px 5px #000000;
+}
 .passion-desc{
-  letter-spacing: 1px;
-  width: 50%;
-  padding: 4em;
-}
-.reason{
-  text-align: left;
-}
+  background-color:#111111;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
 
+  width: 50%;
+
+}
+.career-content p{
+  text-align: justify;
+  margin-bottom: 0;
+  font-size: 1.1em;
+}
+.headerpassion, .reason{
+  padding: 0 4em;
+}
 /* CSS for sources */
 .sources a, .sources li{
   opacity: 0.5;
@@ -255,174 +372,157 @@ html, body{
 }
 .sources a:link{
   font-family: serif;
-  color: #f8f8f8;
+  color: inherit;
   font-style: normal;
 }
 .sources a:visited{
   font-family: serif;
-  color: #f8f8f8;
+  color: inherit;
 }
-
-/*SKILLS SECTION*/
-#skills-learn{
-  width: 80em;
-  margin: 0 auto;
-  color: #f8f8f8;
+/*---------- WHAT I LEARN SECTION ------------*/
+.learn{
+  margin:0 auto;
 }
-.skill-part{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.25fr 1fr .5fr;
-  grid-template-areas:
-    "header header header header" 
-    "sql excel web-dev js"
-    "why why why why";
-}
-#skill-title{
-  font: normal lighter 2.1em 'Ubuntu', sans-serif;
-  letter-spacing: 1px;
-  text-align: center;
-
-  grid-area:header;
-}
-.icon-section{
-  font: normal 100 1em 'Open Sans', sans-serif;
+.learn-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 0;
   
+}
+.learn-content{
+  z-index: 2;
+  background:#111111;
+  padding:  1em .5em 0;
+}
+.learn-content h3{
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.learn-content p{
+  font-size: 1.1em;
+  margin-top: .5em;
+  margin-bottom: 0;
   text-align: justify;
+}
+.part-section{
+  width: 43%;
+  margin: .5em;
+  padding: 2em;
+  background:#111111;
+  box-shadow: 0px 15px 2px -8px #000000;
+}
+
+.part-section img{
+  width: 100%;
+  filter: brightness(80%);
+  margin: 0 auto;
+}
+/*--------------SKILLS SECTION--------------*/
+.part{
+  margin: 0 auto;
+}
+.part-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 0;
+}
+.skill-section{
+  text-align: justify;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 1em;
+  width: 18em;
+  padding:2.5em 1em;
+  background-color:#111111;
+  box-shadow: 15px 15px 3px -1px #000000;
+  border-radius: 5px;
+  transition: all .4s;
 }
-
-#sql{
-  grid-area: sql;
+.skill-section:hover{
+  transform: translate(0, -20px)!important;
 }
-#excel{
-  grid-area: excel;
-
+.skill-section h3{
+  font-size: 1.3em;
+  margin-bottom: 0;
 }
-#web-dev{
-  grid-area: web-dev;
-}
-#js{
-  grid-area: js;
-}
-
-.icon-section img{
+.skill-section img{
   -webkit-filter: invert(1);
   filter: invert(1);
-  width: 50px;
+  width: 70px;
 }
-#why{
-  grid-area: why;
+.skill-section p{
+  margin-bottom: 0;
+  font-size: 1.1em;
+}
 
-  font: normal 1em "Open Sans", sans-serif;
-  padding: 0 1em;
-  text-align: justify;
-}
-/*FOOTER PART*/
-footer{
-  width: 70em;
-  margin:0 auto;
-  font:normal 1em 'Open Sans', sans-serif;
-  color: #FFFFFF;
-}
-.footer-box{
+/*-------------FOOTER PART--------------*/
+.button-box{
+  margin: 3em auto;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  flex-wrap: wrap;
 }
-footer h2{
-  font: normal lighter 1.4em 'Ubuntu', sans-serif;
-  margin-bottom: 0em;
-}
-.thankpart{
+
+.button-back{
   text-align: center;
-  font:normal 1.5em 'Open Sans', sans-serif;
-  margin: 2em auto;
-}
-.form-part{
-  width: 50%;
-}
-label{
-  margin-top: 1em;
-}
-input, textarea{
-  padding:1em;
-  font: normal 300 .9em 'Open Sans', sans-serif;
-  margin-top: .5em;
-}
-#submit-button{
-  width: 25%;
-  margin-left: 1em;
-  font: normal .9em 'Open Sans', sans-serif;
-  background-color: transparent;
-  color: #FFFFFF;
-  border: #FFFFFF solid 2px;
-  transition: all 0.4s ease 0s;
-}
-#submit-button:hover{
-  letter-spacing: 1px;
-  color: #000000;
-  background-color: #FFFFFF;
-  opacity: .9;
-  font-weight: bold;
-}
-.end{
-  text-align: right;
-}
+  margin: 0em 1em 1.5em;
+  padding: .8em 2em;
+  position: relative;
+  overflow: hidden;
 
-.socialmedia{
-  margin-top: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 1.2em;
-}
-.socialmedia i{
-  padding-left: 0.5em;
-  font-size: 1.5em;
-
-  transition: .5s;
-}
-.socialmedia i:hover{
-  opacity: .5;
-  -webkit-transform: translate(0, -30%);
-  transform: translate(0, -30%);
-}
-.socialmedia a{
+  width: 8em;
+  border: solid .25px  rgba(2, 119, 189, .1);
+  border-radius: 50px;
+  background: rgba(2, 119, 189, .1);
+  color:#0277bd;
+  
+  
+  font:bold 1.1em "Open Sans", sans-serif;
   text-decoration: none;
-  color: #FFFFFF;
+  z-index: 1;
+  transition: all .5s;
+
+  box-shadow: 5px 5px 5px #000000;
+
+}
+.button-back:link, .button-back:visited{
+  color: #0277bd;
+}
+.button-back:hover{
+  border: solid .25px rgba(2, 119, 189, .5);
+  transform: translate(0, -10px);
+  color: inherit;
+}
+
+/*the blue part, used for fill animation*/
+.button-back:hover::before{
+  top: 0px;
+  border-radius: 0;
+  
+}
+.button-back::before{
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  
+  background:  rgba(2, 119, 189, .5);
+  border-radius: 80% 80% 0 0;
+  z-index:-2;
+  transition: all .5s;
 }
 .cr{
-  margin-top: 1em;
-  text-align: right;
+  text-align: center;
 }
-.nav-bottom{
-  margin: 1.5em 0 0;
-  color: #FFFFFF;
-  font-size: 1.1em;
-  text-align: right;
-}
-.nav-bottom ul,p{
-  margin: 0;
-}
-.end h2{
-  font-size: 1.4em !important;
-  margin: 0 !important;
-}
-
-.nav-bottom a{
-  text-decoration: none;
-  color: #f8f8f8;
-  margin-left: 1em;
-}
-.nav-bottom a:hover{
-  opacity: .5;
-}
-.nav-bottom a:visited{
-  text-decoration: none;
-}
-.connect{
-  text-align: right;
-}
-

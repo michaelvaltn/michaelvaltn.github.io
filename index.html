@@ -10,182 +10,263 @@
 
   <script src="https://kit.fontawesome.com/6d52582525.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/websitestyle.css">
-
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-  <script src="js/scroll.js" type="text/javascript"></script>
+
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  
+  <script src="js/button.js" type="text/javascript"></script>
 
   <!--Links to fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  
 
 </head>
 <body>
     <div id="bggreetings">
       <header class='navbar'>
         <ul>
-          <i id="icon">.michaelvaltn</i> 
-          <a href="#" class="nav-tab">About Me</a>
-          <a href="#" class="nav-tab">Works</a>
-          <a href="#" class="nav-tab">Resume</a>
+          <i id="logo-web">.michaelvaltn</i> 
+          <div class="nav-tab-box">
+            <a href="#" class="nav-tab">About Me</a>
+            <a href="#" class="nav-tab">Works</a>
+            <a href="#" class="nav-tab">Resume</a>
+          </div>
         </ul>
       </header>
       <div class='greetingpart'>
         <div class="box-all">
-          <div class="box-text">
-            <h1 class="greeting"> Hello! I'm
-            <span style="color:#0D44B1">Michael</span> </h1>
-            <div class="text-about">
-              <h2>
-                I'm a young Accounting Undergraduate Student from Atma Jaya Catholic University of Indonesia. I'm mainly interested in technology and management 
-                consulting. But as an Accounting student I'm also interested in Auditing.</h2>
-              <p>
-                This personal webpage serves as a personal branding media and also as a great practice for learning web development. I will put up some details about 
-                my interest and technical skills that I learn. Hopefully it will be able to improve my chance to get a career in accordance to my interest.</p>
+            <h1 class="greeting">I'm<span style="color:#0277bd"> Michael</span></h1>
+            <div class="box-text">
+              <p>An Accounting Undergraduate Student. 
+              This is my personal website to show my current interest and my personal works.</p>
             </div>
             <div id="web-button-part">
-              <a href="MyCVtest.html" class="web-button" target="_blank">See My Resume</a>
-              <a href="#contact" id="contact-button"class="web-button">Contact Me</a>
+              <a href="#" class="web-button" target="_blank">See My Resume</a>
+            </div>
+            <div class="social">
+              <!--<h2>Connect with me on ...</h2>-->
+              <div class ='socialmedia'> 
+                <a href="https://www.linkedin.com/in/michaelvchandra/" target="_blank" class="icon center">
+                  <img src="images/icon/png/052-linkedin.png" alt="linkedin" id="linkedin-icon">
+                </a>
+                <a href="https://github.com/michaelvaltn" target="_blank" class="icon center">
+                  <img src="images/icon/png/032-github.png" alt="github" id="github-icon">
+                </a>
+                <a href="https://www.instagram.com/michaelvaltn/?hl=en" target="_blank" class="icon center">
+                  <img src="images/icon/png/044-instagram.png" alt="insta" id="insta-icon">
+                </a>
+              </div> 
             </div>
           </div>
-          <img src="images/picture/circlemichael-min.png" alt="my profile picture"  class="mypic"/>
         </div>
-      <div id="my-scroll">
-        <a id="downClick"><span></span></a>
+        <div id="my-scroll">
+          <a id="downClick"><span></span></a>
+        </div> 
+    </div>
+  </div>
+  <div id="divToShowHide">
+    <section id="1" class="intro-content" data-aos="fade" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
+      <div class="intro-box">
+        <img src="images/picture/circlemichael-min.png" alt="my profile picture"  class="mypic"/>
+        <h2 class="section-h2">Hello<span style="color:#0277bd">.</span></h2>
+        <div class="text-about">
+        <p>
+          My name is Michael Valentine Chandra. I'm a young Accounting Undergraduate Student from Atma Jaya Catholic University of Indonesia. Aside from my studies, 
+          I'm currently working as part-time student staff for Atma Jaya's UPPS for Academic Transformation.</p>
+        </div>
+      </div>
+      
+    </section>
+    <div id="2" class="section-title" data-aos="fade-up" data-aos-anchor-placement="center-bottom">  
+      <div class="section-title-box">
+        <h2 class="section-h2">My Current <span style="color:#0277bd">Interest</span>, Including Careers</h2>
+        <p class="section-p">I'm young and still has so much to learn, so sometimes I'still trying to figure out about what I want to be. 
+        But currently the descriptions below pretty much describes what I'm interested in, including careers path that I think will suit myself and 
+        topics that catches my interest.
+        </p>
       </div>
     </div>
-
-  <article class="mypassion">
-    <section class="passion-box">
-      <div id="consult-content" class="career-content">
-        <img src="images/picture/consult_pic-min.png" alt="icon-consultation">
-        <div  class="passion-desc">
-          <header id="consult-head"class="headerpassion">
-            <h3>Management Consulting</h3>
-            <p>
-              Provide expert advise to organizations on a specific project or more broadly on the structure and practices of a 
-              firm to improve their performance by solving their issues and encourage growth. The work applied to every industries with a wide range of issues, 
-              thus the consultants must constantly learn and adapt.</p>
-          </header>
-          <h3>Why I'm interested in it?</h3>
-          <p id="consult-reason" class="reason">
-            Management consulting is a path that I'm very interested in for several reasons. I personally feel that I am a generalist, I like to learn how many 
-            things work in the world, an as an Accounting student I'm familliar with business processes, so I think management consulting fits me on that.</p>
-        </div>
-      </div>
-      <div id="tech-content" class="career-content">
-        <div class="passion-desc">
-          <header id="tech-head" class="headerpassion">
-            <h3>Technology</h3>
-            <p>
-              A sum of techniques, skills, methods, and processes used in production of goods and services or in the accomplishment of objectives, such as 
-              investigation, research, etc. In technology consulting, it is to advise clients of how to use their IT practices to achieve their business objectives.
+    <section class="passion-content">
+      <div class="passion-box">
+        <div id="audit-content" class="career-content">
+          <div class="image-box" data-aos="fade" data-aos-anchor-placement="center-bottom">
+            <img src="images/picture/audit_pic2-color.png" alt="audit-pic">
+          </div>
+          <div class="passion-desc" data-aos="fade" data-aos-delay="150" data-aos-anchor-placement="center-bottom">
+            <header id="audit-head" class="headerpassion">
+              <h3>Audit & <span style="color:#0277bd">Assurance</span></h3>
+              <p>
+                Audit is a systematic examination of accounts and documents of the company to ensure its true and fairness, 
+                while Assurance is the process in to analyzed different processes, procedures and the operations of the company. </p>
+            </header>
+            <div id="audit-reason" class="reason">
+              <h3>Why I'm interested in it?</h3>
+              <p>
+              Auditing & Assurance is directly aligned with my Accounting degree. It is the subject that I enjoy the most, especially because it's very relevant 
+              and perhaps one of the most important services needed by all company.
             </p>
-          </header>
-          <p id="tech-reason" class="reason">
-            <h3>Why I'm interested in it?</h3>
-            21st century is hot with technology and digital transformation. Thus I have to allow myself to be literate in digital and technology since I will be using it 
-            a lot. Technology consulting also pique my interest since it allows me to learn a lot about tech and makes me more relevant in this digital age.
-          </p>
+            </div>
+          </div>
         </div>
-        <img src="images/picture/tech_pic-min.png" alt="">
-      </div>
-      <div id="audit-content" class="career-content">
-        <img src="images/picture/audit_pic-min.png" alt="icon-audit">
-        <div class="passion-desc">
-          <header id="audit-head" class="headerpassion">
-            <h3>Auditing</h3>
-            <p>
-              An independent examination to check whether it follows the requirements, free of fraud, and ensure the true and fairness of the process or system 
-              (but usually associated with financial information). Auditing is beneficial to stakeholders that they acquired assurance of the information. </p>
-          </header>
-          <p id="audit-reason" class="reason">
-            <h3>Why I'm interested in it?</h3>
-            Auditing is directly aligned with my degree and it is one of my favorite subject in Accounting program. I really enjoy the subject and it is very interesting 
-            for me, as it is very relevant in the business world and perhaps one of the most important services that is needed by companies.
-          </p>
+        <div id="tech-content" class="career-content">
+          <div class="passion-desc" data-aos="fade"  data-aos-anchor-placement="center-bottom" data-aos-delay="150" >
+            <header id="tech-head" class="headerpassion">
+              <h3>Technology & <span style="color:#0277bd">Programming</span></h3>
+              <p>
+                Technnology is a sum of techniques, methods, and processes used in production of goods & services or in the accomplishment of objectives. 
+                Programming is a set of instructions used to tell the computer precisely what to do.
+              </p>
+            </header>
+            <div id="tech-reason" class="reason">
+              <h3>Why I'm interested in it?</h3>
+              <p>
+              Learning about technology and programming itself makes me feel relevant in the in the 21st century. 
+              I'm really interested to learn the implementation of technology and programming in audit, assurance, and other related services.
+            </p>
+            </div>
+          </div>
+          <div class="image-box" data-aos="fade" data-aos-anchor-placement="center-bottom">
+            <img src="images/picture/tech_pic-color.png" alt="tech-pic">
+          </div>
+        </div>
+        <div id="consult-content" class="career-content">
+          <div class="image-box" data-aos="fade" data-aos-anchor-placement="center-bottom">
+            <img src="images/picture/consult_pic-color.png" alt="consult-pic">
+          </div>
+          <div  class="passion-desc" data-aos="fade"  data-aos-delay="150" data-aos-anchor-placement="center-bottom">
+            <header id="consult-head"class="headerpassion">
+              <h3>Management <span style="color:#0277bd">Consulting</span></h3>
+              <p>
+                Provide expert advise to organizations on a specific project or more broadly on the structure and practices of a 
+                firm to improve their performance by solving their issues and encourage growth.
+              </p>
+            </header>
+            <div id="consult-reason" class="reason">
+              <h3>Why I'm interested in it?</h3>
+              <p>
+                Management consulting is a path that I'm quite interested because I like to learn new things and as an Accounting student I'm familliar with 
+                business processes, so I think management consulting fits me on that.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </article>
-  <article id="skills-learn">
-    <hr>
-    <div class="skill-part">
-      <h2 id="skill-title">Some <span style="color:#0D44B1">Skills</span> that I currently learn</h2>
-      <section id="sql" class="icon-section">
-        <img src="images/icon/sql-icon.png" alt="sql-icon">
-        <h3>SQL</h3>
-        <p>Structured Query Language (SQL) is a standard language used to interact with the database. Although it is not usually required for consultants and auditors, 
-          proficient in SQL will be an advantage since companies will use databases and we need SQL to access it. </p>
-      </section>
-      <section id="excel" class="icon-section">
-        <img src="images/icon/excel.png" alt="ms.excel-icon">
-        <h3>Ms. Excel</h3>
-        <p>Ms. Excel maybe is the mostwidely used Office application. Excel is also the most often used tools for consultant for data analysis, and 
-          for data visualization, to some degree. It is so common that proficiency in Microsoft Excel is a must, since many job requirements demands proficiency in it.</p>
-      </section>
-      <section id="web-dev" class="icon-section">
-        <img src="images/icon/webdev.png" alt="webdev-icon">
-        <h3>Web development</h3>
-        <p>To start learning program, many suggested I have to start with basic Web Development using HTML and CSS. Even though it isn't really a programming 
-          language, it's still useful, especially for teaching me a lot about how web browsers work and allows me to create my own personal website.</p>
-      </section>
-      <section id="python" class="icon-section">
-        <img src="images/icon/python.png" alt="python-icon">
-        <h3>Python programming</h3>
-        <p>Python is one of the most popular programming language in the world. It's relatively simple and easy to read and learning it will be useful for me to 
-          build a programmer mindset (logical thinking and problem solving) and assist me further in data related work, such as analysis and visualization.
+    
+    <div id="3" class="section-title" data-aos="fade-up"  data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+      <div class="section-title-box">
+        <h2 class="section-h2"><span style="color:#0277bd">Subjects </span>I learn as an Accounting Student</h2>
+        <p class="section-p">
+          Warren Buffet once said that Accounting is the language of business. It teaches you about how to measure, process, and communicate all 
+          sorts of financial information and also allows you to understand the process of a business. Some subjects that I learn includes:
         </p>
-      </section>
-      <section id="why">
-        <h2>Why I should learn these?</h2>
-        <p>Learning some technical skills will give an advantage and keeps myself productive. Since all company is growing towards digitalizations, I think 
-          even non-Computer Science student should learn at least some programming. More importantly, learning it also builds your mind, especially your logical 
-          thinking and problem solving, which is a very important soft skills and priced so much by employers.
-        </p>
-      </section>
+      </div>
     </div>
-    </article>
-  <br>
-  <hr>
+    <section class="learn">
+      <div class="learn-box">
+        <section id="financial-accounting" class="part-section" >
+          <img src="images/picture/financial-accounting.jpg" alt="F-Accounting" data-aos="fade"  data-aos-anchor-placement="center-bottom" >
+          <div class="learn-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+            <h3><span style="color:#0277bd">Financial</span> Accounting</h3>
+            <p>A field of Accounting that is concerned with summary, analysis, and report of all transaction that happened in the company. I learn about how to properly 
+            record transaction and how to prepare financial report in accordance to standard Accounting rules like IFRS or Indonesia's PSAK.
+            </p>
+          </div>
+        </section>
+        <section id="Audit-accounting" class="part-section">
+          <img src="images/picture/audit_pic-color.png" alt="audit-pic" data-aos="fade"  data-aos-anchor-placement="center-bottom">
+          <div class="learn-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+            <h3>Financial<span style="color:#0277bd"> Auditing</span> </h3>
+            <p>A systematic examination of accounts and documents of the company to ensure the true and fairness of the information. I learn a lot about the audit risk, 
+            audit engagement, audit tests (risk assestment, test of control, and substantive procedure), and procedures or ways to gather audit evidences.
+            </p>
+          </div>
+        </section>
+        <section id="IS-accounting" class="part-section">
+          <img src="images/picture/IS_pic-color.png" alt="AIS" data-aos="fade"  data-aos-anchor-placement="center-bottom">
+          <div class="learn-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+            <h3>Accounting <span style="color:#0277bd">Information</span> System</h3>
+            <p>The system of collecting, storing and processing accounting information. This subject teaches me a lot about various business processes and the ideal & 
+            proper control that must be imposed on the process to reduce the risk of fraud.
+            </p>
+          </div>
+          
+        </section>
+        <section id="cost-accounting" class="part-section">
+          <img src="images/picture/cost_pic-color.png" alt="cost accounting" data-aos="fade"  data-aos-anchor-placement="center-bottom">
+          <div class="learn-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+            <h3><span style="color:#0277bd">Cost</span> Accounting</h3>
+            <p>A field of accounting concerned with recording and processing measurements of cost in manufacturing company. I learn a lot about methods used to measure 
+            cost and the process behind calculating Cost of Goods Sold.
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+      <div id="4" class="section-title" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="section-title-box">
+          <h2 class="section-h2">Some <span style="color:#0277bd">Skills</span> that I Currently Learn</h2>
+          <p class="section-p">
+            Learning some technical skills will give an advantage and keeps myself productive. 
+            Learn how to program makes you feel relevant in the digital ages and it also builds your mind, especially your logical 
+            thinking and problem solving, which is a very important soft skills and priced so much by employers.
+          </p>
+        </div>
+      </div>
+      <section class="part">
+        <div class="part-box" data-aos="fade" data-aos-anchor-placement="center-bottom">
+          <section id="sql" class="skill-section">
+            <img src="images/icon/sql-icon.png" alt="sql-icon">
+            <h3>Structured <span style="color:#0277bd">Query</span> Language</h3>
+            <p>The standard language used to interact with the database. Learning SQL gives you the idea of how relational databases work 
+              and since most companies nowadays use databases, it is very important to learn it.</p>
+          </section>
+          <section id="excel" class="skill-section">
+            <img src="images/icon/excel.png" alt="ms.excel-icon">
+            <h3>Microsoft <span style="color:#0277bd">Excel</span></h3>
+            <p>Probably the most widely used Office application as basic and traditional tools for data analysis and
+              data visualization. Microsoft Excel is so common and many job requirements 
+              demands proficiency in it.</p>
+          </section>
+          <section id="web-dev" class="skill-section">
+            <img src="images/icon/webdev.png" alt="webdev-icon">
+            <h3>Web <span style="color:#0277bd">Development</span></h3>
+            <p>To start learning program, some suggested I have to start with basic Website Development using HTML and CSS. it is useful
+               for teaching me a lot about how web browsers work and allows me to create this personal website.</p>
+          </section>
+          <section id="python" class="skill-section"> 
+            <img src="images/icon/python.png" alt="python-icon">
+            <h3>Python <span style="color:#0277bd">Programming</span></h3>
+            <p>Python is one of the most popular programming, learning it is relatively simple and will be useful for me to 
+              train my logical thinking and problem solving. It will also assist me further in data analysis and visualization.
+            </p>
+          </section>
+        </div>
+      </section>
+  </div>
   <footer>
-    <section class="thankpart">
-      <h2>Thanks for Visiting!</h2>
-      <p>Feel free to contact me or giving any suggestion</p>
-    </section>
-    <div class="footer-box">
-      <section class="form-part">
-        <form action="mailto:michaelvalentine140@gmail.com" method="post" enctype="text/plain" id="contact">
-            <legend for="form"></legend>
-            <label for="email">Email:<br><input type="email" id="form" name="form" placeholder="Enter your email" size="30"></label>
-            <input type="submit" id="submit-button" name="form"><br>
-            <label for="message">Message:<br><textarea type="text" id="form" name="form" placeholder="Enter your message" rows="5" cols="60"></textarea></label>
-        </form>
-      </section>
-      <section class="end">
-        <h2 id="icon">.michaelvaltn</h2>
-        <div class="nav-bottom">
-          <ul>
-            <a href="#">Home</a>
-            <a href="#">Works</a>
-            <a href="#">Resume</a>
-          </ul>
+    <div class="section-title" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="section-title-box">
+          <h2 class="section-h2">Thank You for <span style="color:#0277bd">Visiting!</span></h2>
+          <p class="section-p">
+            I really appreciate your visit here. I hope the information here is enough to satisfy your curiosity and you have a great user 
+            experience while reading my personal website.
+            If you want to go back to certain sections you can use the buttons below.
+          </p>
+          <div class="button-box">
+            <a href="#bggreetings" class="button-back">Back to the top</a>
+            <a href="#1" class="button-back">Introduction</a>
+            <a href="#2" class="button-back">My Interest</a>
+            <a href="#3" class="button-back">Subjects I learn</a>
+            <a href="#4" class="button-back">Skills I learn</a> 
+          </div>
         </div>
-        <div class="connect">
-          <div class ='socialmedia'>
-            <p>Connect With <span style="color:#0D44B1"> Me </span> on</p>  
-            <a href="https://www.linkedin.com/in/michaelvchandra/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/michaelvaltn/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/michaelvaltn" target="_blank"><i class="fab fa-github"></i></a>
-          </div>  
-        </div>
-      </section>
-    </div>
-    <br>
-    <br>
-    <hr>
+      </div>
     <p class='cr'>© Michael Valentine Chandra 2020</p>
     <details class="sources">
       <details>
@@ -200,6 +281,7 @@
       </details>
       <details>
         <summary>Sources of icon</summary>
+          <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
           <a href="https://www.flaticon.com/authors/smartline" title="Smartline">Icons made by Smartline</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a><br>
           <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Icons made by Pixel perfect</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a><br>
           <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Icons made by Freepik</a><a href="https://www.flaticon.com/" title="Flaticon"> from www.flaticon.com</a><br>
@@ -208,5 +290,12 @@
       </details>
     </details>
   </footer>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+  window.addEventListener('load', AOS.refresh)
+  AOS.init({
+    easing: 'ease-in',
+  });
+</script>
 </body>
 </html>
